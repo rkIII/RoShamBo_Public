@@ -1,0 +1,10 @@
+
+\section{Background}
+\label{sec:background}
+
+	RoShamBo is a simple two player zero-sum game in which each opponent simultaneously makes a move. Players can choose to throw Rock, Paper, or Scissors - Rock beats Scissors, Paper beats Rock, and Scissors beats Paper. The optimal strategy in this game would be the Nash Equilibrium Strategy where the player throws each move one-third of the time. This ensures that the player ends up with a zero sum in a worst case scenario. But, what if we are facing a computer or AI that is not playing optimally? In a competition like the International RoShamBo Programming Competition, players submit bots that implement strategies that aim to maximize their winning percentage.
+
+	As mentioned previously, we base our strategy off of the Iocaine Powder strategy in the First International RoShamBo Programming Competition. This program uses three predictive algorithms: random guess, frequency analysis, and history matching \cite{iocaine}. With random guess, the player chooses one of the three possible actions at random. The goal of this strategy is to prevent the opponent from being able to detect a pattern in the player's actions, since they're chosen at random. The next strategy is frequency analysis, in which the player looks at their opponent's past moves, finds the most-played move, and assumes that the opponent will use this move. The last strategy is history matching, in which the player takes the opponent's last few moves and looks for a previous sequence in which the opponent made the same sequence of moves. Then, the player detects the move that the opponent made after this sequence and assumes that they will again make that same move. In our strategy, which is explained further in the next section, we use methods similar to frequency analysis and history matching.
+
+
+

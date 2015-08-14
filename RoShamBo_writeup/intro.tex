@@ -1,0 +1,16 @@
+
+
+\section{Introduction}
+\label{sec:intro}
+
+In this experiment, we create a bot that excels at Rock Paper Scissors. Rock Paper Scissors is a two-player game in which the players throw one of three actions: rock, paper, or scissors. Rock trumps scissors, scissors trumps paper, and paper trumps rock. The players' actions are kept secret until they throw their specific move. This game is a perfect arena for AI purposes because it's relatively simple to develop strategies and predict an opponent's move since there are only three possible moves to make. \\
+
+There are many possible strategies that are discussed in previous literature. For instance, Beat Frequent Pick (BFP) is a simple strategy in which a bot assumes that its opponent favors a certain move \cite{iocaine}. It keeps track of the number of times each action is thrown to determine the favored move, and then the bot throws the action that beats the opponent's favored move. Another strategy, which is related to the one we ultimately use and is similar to the Nash Equilibirum, is to keep track of the opponents' actions and calculate the probabilities of each move. Then, with these probabilities, the player throws the action that beats each of these moves \cite{smartrobots}. \\
+
+As discussed later in this paper, we adapt strategies from entries in the First International RoShamBo Tournament, which was held in 1999 \cite{iocaine}. In this competition, participants were tasked with programming bots to compete in a RoShamBo tournament. The top bot was called Iocaine Powder, and we use this as inspiration for our own bot.\\
+
+In the following sections, we discuss the strategy for Iocaine Powder from the RoShamBo tournament, our own strategy and experiment, and our results against other bots.
+
+
+
+
